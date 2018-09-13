@@ -1,15 +1,17 @@
-apply plugin: 'com.android.application'
+apply plugin: 'com.android.library'
 
 android {
     compileSdkVersion 26
     buildToolsVersion "28.0.1"
+
     defaultConfig {
-        applicationId "com.hq.android.hserver"
         minSdkVersion 21
         targetSdkVersion 26
         versionCode 1
         versionName "1.0"
+
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
     }
     buildTypes {
         release {
@@ -26,6 +28,4 @@ dependencies {
     })
     compile 'com.android.support:appcompat-v7:26.0.0-alpha1'
     testCompile 'junit:junit:4.12'
-
-    compile project(":sdk")
 }
